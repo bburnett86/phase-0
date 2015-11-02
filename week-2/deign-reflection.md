@@ -10,7 +10,7 @@ In this phase you would like to create a website so that you can really understa
 User Experience Design is essentially how people feel about the website they are using. The the main things you should know about it are better your website is planned out, the easier it is to use, the more people are likely  to continue visiting your website. This is valuable because the more people enjoy using and visiting your website they more likely they are to use it for it’s intended purpose.
 
 here’s mine:
-![Alt text](imgs/screenshot.png)
+<img src="./week-2/imgs/screenshot.png" alt="Screenshot"> 
 
 3. Design
 This phase is really where you sit down and draw out exactly what you would like your website to look like. This is really where the information gathered previously on your target market really begins to come into play. Once you’ve decided who your target market is this is where you decide how you would like to draw them in. Whether you’d like big bright pictures if you’re making a website to appeal to children or if you’d like to have Paris Runways for a fashion oriented blog, this is where you explore that niche. Another important part about this part is creating prototypes so that your customer will have the ability to see what you’re working on. You’d like to have a clear line of communication and be open to critique from whomever you are working for/with. 
