@@ -37,6 +37,7 @@ footer{
 
 ul{
 	-webkit-column-count: 2;
+	line-height: 3em;
 }
 footer{
 	color: #000080;
