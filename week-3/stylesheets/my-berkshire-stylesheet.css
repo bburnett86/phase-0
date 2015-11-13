@@ -1,0 +1,66 @@
+html{
+	background-color: #ffffff;
+}
+h1{
+	color: #000080;
+	text-decoration: bold;
+	text-align: center;
+}
+
+h3{
+	color: #000080;
+	text-decoration: bold;
+	text-align: center;
+}
+
+h5{
+	color: #000080;
+	text-decoration: bold;
+	text-align: center;	
+}
+
+span{
+	color: #000080;
+	font-size: .5em;
+}
+
+a:link {
+	color: #800080;
+}
+a:visited {
+	color: #ff0000;
+}
+
+footer{
+	display: block;
+}
+
+ul{
+	-webkit-column-count: 2;
+	line-height: 3em;
+}
+footer{
+	color: #000080;
+	font-size: .75em;
+	text-align: center;
+}
+/*
+When linking an external file to an HTML file it's always important to know exactly where the file is. I found myself in  rabbit hole because
+I was unable to link the CSS sheet to the HTML. After an hour or so of  tinkering I figured out how to get to the correct folder. This could
+ be avoided in real life circumstances by keeping all the files for a certain website in one main folder. For some reason it just didn't dawn 
+ on me that I had to go back to my root phase-0 folder before I could go into week 3 to access the CSS file.
+
+ The positioning was pretty easy. Because we didn't have a bunch of tables and blocks and it was mostly text, all you really
+ had to do was know the correct selector property and value and you were off to the races. Actually that was the most helpful thing
+ I got from codecademy, selector, property, value.
+
+ To modify syles on this I used primarily color and text decoration. If you consider changing the size styling then you can include
+ font-size as well. 
+
+ I attempted to modify the HTML to use classes when I wanted to drop cap. Unfortunately I was unable to figure out how to drop cap successfully
+ hopefully I can recieve some assistance in this area in the future. I feel I was unable to complete it successfully because I made the 
+ Berkshire Hathaway an h1 and I couldn't figure out how to make a class for it that would maintain the original size of the rest of the letters 
+ without making another paragraph after the original letter.
+
+ Lastly, maybe it's my computer, maybe it's Chrome. But control+u did not let me see the code on the Berkshire site. :-(
+ */
