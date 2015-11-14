@@ -1,0 +1,11 @@
+# Define an Empty Method
+
+# I worked on this challenge [by myself, with: ].
+
+
+# Your Solution Below
+def do_something (name, age, height)
+  puts name
+  puts age
+  puts height
+end
