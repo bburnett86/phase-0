@@ -1,5 +1,7 @@
 #Solution Below
-
+first_name = "Breton"
+last_name = "Burnett"
+age = 29
 
 
 
@@ -35,7 +37,3 @@ describe 'age' do
     expect(age).to be_a Fixnum
   end
 end
-
-first_name = "Breton";
-last_name = "Burnett";
-age = 29;
