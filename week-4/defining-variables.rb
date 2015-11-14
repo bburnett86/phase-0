@@ -50,7 +50,7 @@ end
 # How do you define a method?
 #You define a method by putting def before the name and then giving the properties shortly after. This information that's put in as the property is what will show up when you call upon the method later.
 
-# What is the difference between a local variable and a method?
+#What is the difference between a local variable and a method?
 #A method is what would hold your local variable. For example after you define your method you may include local variables within the method to help it work. It's kind of like the relationship between a videogame console and the actual game. The Method would be the console, the local variable would be what's inside the console (method) that makes it useful.
 
 # How do you run a ruby program from the command line?
