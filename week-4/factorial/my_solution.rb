@@ -1,17 +1,12 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # Your Solution Below
 def factorial(number)
   # Your code goes here
-  multiplier = number...1
-  if number <= 1
-    1
-  else
-    p number*(multiplier)
-  end
+  (1..number).inject(:*) || 1
 end
 
-factorial(3)
+p factorial(5)
