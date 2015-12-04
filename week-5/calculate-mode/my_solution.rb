@@ -24,13 +24,10 @@
 # 1. Initial Solution
 def mode(array)
   array.sort
-  elements = Hash.new(0)
 
-  array.each do |number|
-    array.count(number)
-  end
+  array.group_by {|item| item.uniq}
 end
-p mode([1,2,3,4,4,3,2])
+p mode([1, 2, 3, 4, 5, 5, 7])
 
 
 # 3. Refactored Solution
