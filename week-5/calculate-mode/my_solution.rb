@@ -23,11 +23,30 @@
 
 # 1. Initial Solution
 def mode(array)
-  array.sort
+  array.sort!
 
-  array.group_by {|item| item.uniq}
+  final_value = nil
+  final_number_of_occurances = 0
+
+  current_value = nil
+  current_number_of_occurances = 1
+  (array.length -1).times do |index|
+    if array[index] == array[index + 1]
+      current_value = array[index]
+      current_number_of_occurances += 1
+    elsif current_number_of_occurances > final_number_of_occurances
+      final_value = current_value
+      final_number_of_occurances = current_number_of_occurances
+      current_number_of_occurances = 1
+    end
+  end
+  p " The final value #{final_value}
+  array.each do |item|
+
+  end
+
 end
-p mode([1, 2, 3, 4, 5, 5, 7])
+mode([13, 5, 35, 4, 5, 2, 17])
 
 
 # 3. Refactored Solution
