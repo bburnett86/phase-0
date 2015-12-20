@@ -39,6 +39,7 @@ class CreditCard
       @card_num.each do |element|
         element = element.to_i
         @initial_array << element
+        p @initial_array
       end
     end
   end
@@ -71,7 +72,7 @@ class CreditCard
 
 end
 
-card = CreditCard.new (4408041234567901)
+card = CreditCard.new (4368024026692614)
 card.check_card
 
 

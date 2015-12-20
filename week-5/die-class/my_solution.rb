@@ -36,6 +36,9 @@
 # 3. Refactored Solution
 
 class Die
+
+  attr_reader :sides
+
   def initialize(sides)
     @sides = sides
     if @sides < 1
@@ -43,12 +46,13 @@ class Die
     end
   end
 
-attr_reader :sides
-
   def roll
     @roll = 1 + rand(@sides)
   end
 end
+
+guess = Die.new (14)
+p guess.roll
 
 # 4. Reflection
 # This project was one of the more practical. After I realized how the methods would work in conjunction to roll the die, it was a matter of figuring out first how to raise the argument error in the initialize method, and after which point figuring out to add one to rand (because it begins at zero) was the other challenging aspect of the challenge. Otherwise, I feel really well prepared to do classes.
