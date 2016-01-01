@@ -22,32 +22,6 @@
 //     string = num.toString();
 //     array = string.split("");
 //     array = array.reverse();
-//     array.splice( 3, 0, ",");
-//     array = array.reverse();
-//     array = array.join("");
-//     return array;
-//   }else if (num >999999){
-//     string = num.toString();
-//     array = string.split("");
-//     array = array.reverse();
-//     array.splice( 3, 0, ",");
-//     array.splice( 7, 0, ",");
-//     array = array.reverse();
-//     array = array.join("");
-//     return array;
-//   }else
-//     string = num.toString
-//     return string
-// }
-
-
-// Refactored Solution
-
-// function separateComma(num) {
-//   if (num > 999 && num <= 999999){
-//     string = num.toString();
-//     array = string.split("");
-//     array = array.reverse();
 //     commaSpace = 3,
 //     array.splice( commaSpace, 0, ",");
 //     array = array.reverse();
@@ -69,7 +43,8 @@
 //     return string
 // }
 
-console.log(separateComma(612));
+
+// Refactored Solution
 
 function separateComma(num) {
   string = num.toString();
@@ -95,7 +70,7 @@ function separateComma(num) {
 
 // Your Own Tests (OPTIONAL)
 
-
+console.log(separateComma(612));
 
 
 // Reflection
