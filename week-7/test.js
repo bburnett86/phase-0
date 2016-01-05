@@ -76,5 +76,6 @@ var hero = new player()
 }
 
 var enemy = new villian()
+var hero = new hero
 hero.choice('attack');
 hero.choice('defend');
