@@ -69,8 +69,11 @@ end
 # DRIVER CODE
  # initialize VirusPredictor for each state
 
-all = VirusPredictor.new(STATE_DATA).each do | state_of_origin, population_density state|
-  puts "#{@population_density} , #{@population}, #{@state}"
+all = VirusPredictor.new(STATE_DATA, :population_density, :population)
+all.each do |key,value|
+  if value.kind_of? (STATE_DATA)
+    STATE_DATA.each {|key,value| p value[:population_density]}
+  end
 end
 
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
