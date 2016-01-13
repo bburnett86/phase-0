@@ -1,0 +1,11 @@
+What is a one-to-one database?
+
+  A one to one database is a database that exists because there's a quality in the table that usually would exist but can return NULL sometimes.
+When would you use a one-to-one database? (Think generally, not in terms of the example you created).
+  You would use a one to one database if you have a list of qualities that apply to something and you find that one of the qualities doesn't always apply. For example if I was making a person attributes chart, I could have a sports_id quality which would have an id that corresponds to the name of your favorite sport. But what if you don't like sports and that answer is nothing? That's exactly what you would use this for, as you generally try to avoid null in your primary keys.
+What is a many-to-many database?
+  A many to many database are several larger tables connected by a table of id's that correspond to those tables. This is useful if you have qualities that have a lot of things to a lot of things. For example there's many different orders you can make of garrets popcorn and there's also many customers using them.
+When would you use a many-to-many database? (Think generally, not in terms of the example you created).
+  A many to many database would be useful in the garretts example because you have a list of things included in the order: item size, order date, price, ID, etc. Now you would have an ID because it wouldn't make since to save all the customers information to every order. Also, because there are so many customers, and all the customers have their own attributes, you wouldn't want to have a direct link to the customers table. You'd want an ID table in the middle so that the customer ID in the order table can relate smoothly to any customer in the customers table. This way when you place an order you just enter the information that goes in the order and insert the cooresponding customer ID to collect their information.
+What is confusing about database schemas? What makes sense?
+  Database schemas was probably one of the easier things we learned. All of the rules are basic and from a logistics stand point it makes since when to use certain databases. I honestly can't wait to get to integrate this information into my website design.
