@@ -81,11 +81,13 @@ nested_data = {array: ["array", {hash: "finished"}]}
 #   end
 # end
 
-# nested_data.each do |key,value|
-#   if value.kind_of?(Array)
-#     nested_data.each{|key,value| p value[1][:hash]}
-#   end
-# end
+nested_data.each do |key,value|
+  if value.kind_of?(Array)
+    nested_data.each do |key,value|
+      p value[1][:hash]
+    end
+  end
+end
 
 
 # ============================================================
