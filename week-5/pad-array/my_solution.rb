@@ -1,4 +1,4 @@
-# Pad an Array
+ # Pad an Array
 
 # I worked on this challenge [by myself, with: ]
 
@@ -74,6 +74,7 @@ def pad(array, min_size, value = nil) #non-destructive
   new_array
 end
 
+p pad([1,5,6], 12, "index")
 
 # 4. Reflection
 
