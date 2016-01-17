@@ -1,18 +1,41 @@
-//Pseudocode
+// Pseudocode
+// Input: I would to be able to input an array, it's minnimum size, and a pad word.
+// Output: I would like to recieve my array back with the extra pad words added in for as many times as the minnimum size is greater than the array length.
+  //Create a function that will accept three arguments
+    //The array, the min_size and the value
+  // Create a variable to stand in for the in size - array length and use that as the conditional for a while loop.
+  // Push a value into the array everytime you loop through until the variable is 0
 
-// Input: Integer
-// Output: Whether or not the number is a valid credit card number.
-// Steps:
-  // Class should only take credit card numbers that are exactly 16 digits, otherwise, raise argument error.
-  // Separate all of the given values in the credit card to individual integers.
-  // Starting from the last number, (or first really) make a seperate collection for every other number.
-  // Multiply each number in the second (new collection we just separated) collection by two.
-  // Take all of the new numbers in the second collection and once more break them down into single value integers.
-  // After you have single value integers only in both of the collections, add the collections up.
-  // If the value of the sum of all of the collections, modulus (%) 10 = 0, then it's a valid credit card number, otherwise, it's not useful.
+//Initial Solution
+// function pad (array, min_size, value){
+//   var additional_num = min_size - array.length;
+//   while(additional_num > 0){
+//     array.push(value)
+//     additional_num--;
+//   }
+//   console.log(array)
+// }
 
-function check(integer){
-    if (integer != 16 throw "This is not a valid Credit Card number")
+// pad([1,2,3], 6, "pad")
+
+// Refactored Code
+
+function pad (array, min_size, value){
+  var additional_num = min_size - array.length;
+  for (var i = 0; i < additional_num; i++){
+    array.push(value)
+  }
+  return array
 }
 
-check(765789098)
+console.log(pad([1,2,3], 6, "pad"))
+
+// Reflection
+// What concepts did you solidify in working on this challenge?
+  // I solidified working with JavaScript functions in this challenge. It was fun turning a method into a function, it wasn't much work either, they're for the most part the same.
+// What was the most difficult part of this challenge?
+  // The most difficult part of the challenge for me was remembering to include return before array if I wanted to be able to console.log(pad()) and have it return anything other than undefined. Normally in ruby I could just drop the array down there, not so much in JavaScript. I was really upset I couldn't figure out why it wouldn't return the array, then the word return rung a bell. And boom, it worked.
+// Did you solve the problem in a new way this time?
+  // Yes, the second time around because it's JavaScript I used a for function with my variable to tell how many times we'll pad as the conditional. That allowed me to make the code a bit more tidy when I refactored.
+// Was your pseudocode different from the Ruby version? What was the same and what was different?
+  // The Psuedocode was different, mostly because I've gotten better at Pseudocoding. At first when I first doing pad array I was still new to Psuedocode and using proper names for objects and things of that nature in my psuedocode which I later found out could sometimes lead me astray if my initial solution wasn't correct. I'm actually much more satisfied with my pseudocoding now, but I understand it's still definitely a work in progress.
